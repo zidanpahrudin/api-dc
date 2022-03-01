@@ -4,7 +4,8 @@
   "info": {
     "singularName": "content",
     "pluralName": "contents",
-    "displayName": "Content"
+    "displayName": "Content",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,26 +21,30 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "jenis_content": {
+    "jenis_contents": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::jenis-content.jenis-content",
-      "inversedBy": "contents"
+      "mappedBy": "content"
     },
     "creators": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::creator.creator",
       "inversedBy": "contents"
+    },
+    "kategori": {
+      "type": "string"
     }
   }
 }

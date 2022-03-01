@@ -4,7 +4,8 @@
   "info": {
     "singularName": "jenis-content",
     "pluralName": "jenis-contents",
-    "displayName": "JenisContent"
+    "displayName": "JenisContent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,11 +15,11 @@
     "jenis": {
       "type": "string"
     },
-    "contents": {
+    "content": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::content.content",
-      "mappedBy": "jenis_content"
+      "inversedBy": "jenis_contents"
     }
   }
 }
