@@ -45,6 +45,16 @@
     },
     "kategori": {
       "type": "string"
+    },
+    "creator_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

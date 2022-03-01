@@ -4,7 +4,8 @@
   "info": {
     "singularName": "creator",
     "pluralName": "creators",
-    "displayName": "creator"
+    "displayName": "creator",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "creator_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "contents": {
       "type": "relation",
@@ -35,6 +37,18 @@
     },
     "creator_id": {
       "type": "uid"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
     }
   }
 }
