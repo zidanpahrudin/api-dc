@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jenis_contents",
+  "info": {
+    "singularName": "jenis-content",
+    "pluralName": "jenis-contents",
+    "displayName": "JenisContent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jenis": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "jenis_content"
+    }
+  }
+}
