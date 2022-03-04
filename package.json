@@ -7,12 +7,14 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
-  },
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production DATABASE_URL=$DATABASE_URL strapi build"
+  }, 
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.1",
     "@strapi/plugin-users-permissions": "4.1.1",
     "@strapi/strapi": "4.1.1",
+    "cross-env": "^7.0.3",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.2"
