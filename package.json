@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "production": "cross-env NODE_ENV=production DATABASE_URL=$DATABASE_URL strapi build"
+    "production": "cross-env NODE_ENV=production DATABASE_URL=$DATABASE_URL strapi build",
+    "start:prod": "cross-env NODE_ENV=production DATABASE_URL=$DATABASE_URL strapi start"
   }, 
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.1",
